@@ -1,11 +1,18 @@
 # kasa-test
 
 Consists of two parts:
-1. Simple express server to serve reservations data.
+## Simple express server to serve reservations data (`server` folder).
 
 To run the server (default port is 8080):
-`npm install`
-`npm start`
+- `npm install`
+- `npm start`
 
 Available API:
-`/reservations`
+- `/reservations`
+
+## Nuxt.js application (`client` folder).
+To run web app in dev mode: `npm run dev` (please, note that offline support is available only in production mode).
+
+To run web app in prod mode:
+- `npm run-script build`
+- `npn run-script start`

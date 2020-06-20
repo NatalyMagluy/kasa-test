@@ -36,7 +36,8 @@ export default {
   */
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/pwa'
   ],
   /*
   ** Nuxt.js modules
@@ -49,5 +50,21 @@ export default {
   ** See https://nuxtjs.org/api/configuration-build/
   */
   build: {
+  },
+  pwa: {
+    /** Workbox configuration for offline support */
+    workbox: {
+      runtimeCaching: [{
+        urlPattern: 'http://localhost:3000/.*',
+        method: 'GET',
+        strategyOptions: {
+          networkTimeoutSeconds: 20,
+          cacheName: 'api-cache',
+          cacheableResponse: {
+            statuses: [0, 200]
+          }
+        }
+      }]
+    }
   }
 }
