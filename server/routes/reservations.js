@@ -9,7 +9,7 @@ const reservationsMock = [
     city: 'San Francisco, CA',
 		rating: null,
     cityImage:
-      '<https://cdn.pixabay.com/photo/2013/11/13/21/14/san-francisco-210230_960_720.jpg>'
+      'https://cdn.pixabay.com/photo/2013/11/13/21/14/san-francisco-210230_960_720.jpg'
   },
   {
     confirmationCode: 'BBBBBB',
@@ -18,7 +18,7 @@ const reservationsMock = [
     city: 'Los Angeles, CA',
 		rating: 3,
     cityImage:
-      '<https://cdn.pixabay.com/photo/2016/10/25/12/28/los-angeles-1768743_960_720.jpg>'
+      'https://cdn.pixabay.com/photo/2016/10/25/12/28/los-angeles-1768743_960_720.jpg'
   },
   {
     confirmationCode: 'CCCCCC',
@@ -27,7 +27,7 @@ const reservationsMock = [
     city: 'New York City, NY',
 		rating: 5,
     cityImage:
-      '<https://cdn.pixabay.com/photo/2016/01/19/18/00/city-1150026_960_720.jpg>'
+      'https://cdn.pixabay.com/photo/2016/01/19/18/00/city-1150026_960_720.jpg'
   }
 ];
 
