@@ -1,4 +1,5 @@
 var createError = require('http-errors');
+var cors = require('cors')
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
@@ -16,6 +17,7 @@ app.set('view engine', 'jade');
 // sets port 8080 to default or unless otherwise specified in the environment
 app.set('port', process.env.PORT || 8080);
 
+app.use(cors());
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

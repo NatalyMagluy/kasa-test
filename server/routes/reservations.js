@@ -36,4 +36,17 @@ router.get('/', function(req, res, next) {
   res.json(reservationsMock);
 });
 
+/* GET reservation by confirmationCode. */
+router.get('/:confirmationCode', function(req, res, next) {
+  const confirmationCode = req.param('confirmationCode');
+  // this can be optimized by using different data structure
+  const foundReservation = reservationsMock.find(
+    reservation => reservation.confirmationCode === confirmationCode);
+  if (foundReservation) {
+    res.json(foundReservation);
+  } else {
+    res.status(404).send('No reservation found');
+  }
+});
+
 module.exports = router;
