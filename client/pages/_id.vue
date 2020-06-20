@@ -2,21 +2,20 @@
   <div>
     <navigation />
     <section class="main-section">
-      <div class="image-container" />
-      <reservations-list />
+      <reservation :id="$route.params.id" />
     </section>
     <site-footer />
   </div>
 </template>
 
 <script>
-import ReservationsList from '~/components/ReservationsList.vue'
+import Reservation from '~/components/Reservation.vue'
 import Navigation from '~/components/Navigation.vue'
 import SiteFooter from '~/components/SiteFooter.vue'
 
 export default {
   components: {
-    ReservationsList,
+    Reservation,
     Navigation,
     SiteFooter
   }
@@ -26,10 +25,5 @@ export default {
 <style scoped>
   .main-section {
     padding: 48px 108px;
-  }
-  .image-container {
-    width: 912px;
-    height: 560px;
-    background: url(https://cdn.pixabay.com/photo/2016/01/19/18/00/city-1150026_960_720.jpg);
   }
 </style>
