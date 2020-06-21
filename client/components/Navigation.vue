@@ -1,11 +1,12 @@
 <template>
   <div class="navigation-container">
-    Nav
+    Logo and Navigation
   </div>
 </template>
 <style scoped>
   .navigation-container {
     height: 85.71px;
-    padding: 0px 84px;
+    margin: 0px 84px;
+    border: 1px solid rgba(45, 45, 45, 0.2);
   }
 </style>

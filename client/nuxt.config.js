@@ -30,6 +30,7 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
+    '~plugins/filters.js'
   ],
   /*
   ** Nuxt.js dev-modules
