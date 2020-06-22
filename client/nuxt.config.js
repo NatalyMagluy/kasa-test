@@ -65,6 +65,15 @@ export default {
             statuses: [0, 200]
           }
         }
+      }, {
+        urlPattern: 'https://cdn.pixabay.com/.*',
+        method: 'GET',
+        strategyOptions: {
+          cacheName: 'images',
+          cacheableResponse: {
+            statuses: [0, 200]
+          }
+        }
       }]
     }
   }
