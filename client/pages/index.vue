@@ -2,8 +2,10 @@
   <div>
     <navigation />
     <section class="main-section">
-      <div class="image-container" />
-      <reservations-list />
+      <reservations-list class="reservations-list" />
+      <div class="image-container">
+        <img src="https://cdn.pixabay.com/photo/2016/01/19/18/00/city-1150026_960_720.jpg">
+      </div>
     </section>
     <site-footer />
   </div>
@@ -25,11 +27,33 @@ export default {
 
 <style scoped>
   .main-section {
-    padding: 48px 108px;
+    padding: 10px 108px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
   }
+
   .image-container {
     width: 912px;
     height: 560px;
-    background: url(https://cdn.pixabay.com/photo/2016/01/19/18/00/city-1150026_960_720.jpg);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .image-container img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+  }
+
+  .reservations-list {
+    position: absolute;
+    top: 34px;
+    left: 108px;
+    z-index: 3;
   }
 </style>

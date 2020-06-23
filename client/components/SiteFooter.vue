@@ -10,6 +10,6 @@
     /* Primary/Neutral Grey 2 */
     background: #F2F2F2;
     padding: 48px 108px;
-    height: 588px;
+    height: 50px;
   }
 </style>
