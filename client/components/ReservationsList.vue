@@ -16,7 +16,7 @@
 <script>
 export default {
   async fetch () {
-    this.reservations = await this.$http.$get('http://localhost:3000/reservations')
+    this.reservations = await this.$http.$get('/reservations')
   },
   data () {
     return {

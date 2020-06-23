@@ -52,11 +52,14 @@ export default {
   */
   build: {
   },
+  http: {
+    baseUrl: process.env.BASE_URL || 'http://localhost:3000'
+  },
   pwa: {
     /** Workbox configuration for offline support */
     workbox: {
       runtimeCaching: [{
-        urlPattern: 'http://localhost:3000/.*',
+        urlPattern: `${process.env.BASE_URL || 'http://localhost:3000'}/.*`,
         method: 'GET',
         strategyOptions: {
           networkTimeoutSeconds: 20,

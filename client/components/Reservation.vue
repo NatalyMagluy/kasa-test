@@ -42,7 +42,7 @@ export default {
     }
   },
   async fetch () {
-    this.reservation = await this.$http.$get(`http://localhost:3000/reservations/${this.id}`)
+    this.reservation = await this.$http.$get(`/reservations/${this.id}`)
   },
   data () {
     return {
