@@ -9,7 +9,9 @@ const reservationsMock = [
     city: 'San Francisco, CA',
 		rating: null,
     cityImage:
-      'https://cdn.pixabay.com/photo/2013/11/13/21/14/san-francisco-210230_960_720.jpg'
+      'https://cdn.pixabay.com/photo/2013/11/13/21/14/san-francisco-210230_960_720.jpg',
+    propertyName: 'Kasa San Francisco at Mission Dolores',
+    unitName: 'Apartment 103'
   },
   {
     confirmationCode: 'BBBBBB',
@@ -18,7 +20,9 @@ const reservationsMock = [
     city: 'Los Angeles, CA',
 		rating: 3,
     cityImage:
-      'https://cdn.pixabay.com/photo/2016/10/25/12/28/los-angeles-1768743_960_720.jpg'
+      'https://cdn.pixabay.com/photo/2016/10/25/12/28/los-angeles-1768743_960_720.jpg',
+    propertyName: 'Kasa Los Angeles at Venice Beach',
+    unitName: 'House 2'
   },
   {
     confirmationCode: 'CCCCCC',
@@ -27,7 +31,9 @@ const reservationsMock = [
     city: 'New York City, NY',
 		rating: 5,
     cityImage:
-      'https://cdn.pixabay.com/photo/2016/01/19/18/00/city-1150026_960_720.jpg'
+      'https://cdn.pixabay.com/photo/2016/01/19/18/00/city-1150026_960_720.jpg',
+    propertyName: 'Kasa New York at Chelsea Market',
+    unitName: 'Apartment 5001'
   }
 ];
 

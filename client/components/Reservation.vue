@@ -12,7 +12,8 @@
         <div class="reservation-details">
           <div class="details-row">
             <span class="details-title">Location</span>
-            <span class="details-value">----</span>
+            <span class="details-value">{{ reservation.propertyName }}</span>
+            <span class="details-value">{{ reservation.unitName }}</span>
           </div>
           <div class="details-row">
             <span class="details-title">Dates</span>
