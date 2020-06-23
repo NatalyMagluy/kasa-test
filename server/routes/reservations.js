@@ -36,6 +36,15 @@ router.get('/', function(req, res, next) {
   res.json(reservationsMock);
 });
 
+/* Search reservations by confirmationCode or city. */
+router.get('/search/:searchQuery', function(req, res, next) {
+  const searchQuery = req.param('searchQuery').toLocaleLowerCase();
+  const searchResults = reservationsMock.filter(
+    reservation => reservation.confirmationCode.toLocaleLowerCase().includes(searchQuery) ||
+                   reservation.city.toLocaleLowerCase().includes(searchQuery));
+  res.json(searchResults);
+});
+
 /* GET reservation by confirmationCode. */
 router.get('/:confirmationCode', function(req, res, next) {
   const confirmationCode = req.param('confirmationCode');

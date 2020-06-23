@@ -10,6 +10,7 @@ To run the server (default port is 8080):
 Available API:
 - `/reservations`
 - `/reservations/:confirmationCode`
+- `/reservations/search/:searchQuery`
 
 ## Nuxt.js application (`client` folder).
 To run web app in dev mode: `npm run dev` (please, note that offline support is available only in production mode).
